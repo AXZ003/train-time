@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Time</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+</head>
+<body>
+        
+         <!-- HEADER  -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-m-6">                   
+                    <div id="title">
+                        <h1>Anytime is Train Time</h1>
+                        <h2>Choo Choo</h2>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+
+       <!-- search parameters -->
+      
+        <div class="input-group">
+            <div class="container">
+                <div class="row">
+                    <div class="col-m-8">
+                        <div class="panel panel-default">
+                            
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Current Train Schedule</h3>
+                            </div>
+                                
+                                <div class="panel-body">
+
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Train Name</th>
+                                            <th scope="col">Destination</th>
+                                            <th scope="col">Frequency</th>
+                                            <th scope="col">Next Arrival</th>
+                                            <th scope="col">Minutes Away</th>
+                                            <th scope="col">Total Billed ($)</th>
+                                          </tr>
+                                        </thead>
+                                        
+                                        <tbody class="comment-display"></tbody>
+                                        
+                                    </table>
+ 
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- add  train -->
+<div class="input-group">
+    <div class="container">
+        <div class="row">
+        <div class="col-m-8">
+            <div class="panel panel-default">
+                   
+                    <div class="panel-heading">
+                       <h3 class="panel-title"> Add Train</h3>
+                    </div>
+
+                    <div class="panel-body">
+                        <span class="input-group-addon" id="basic">Train Name</span>
+                            <input type="text" id="name" class="form-control" placeholder="" aria-describedby="basic-addon1">
+
+                        <span class="input-group-addon" id="basic1">Destination</span>
+                            <input type="text" id="role" class="form-control" placeholder="" aria-describedby="basic-addon1">
+
+                        <span class="input-group-addon" id="basic2">First Train Time (HH:mm - military time)</span>
+                            <input type="text" id="start-date" class="form-control" placeholder="" aria-describedby="basic-addon1">
+   
+                        <span class="input-group-addon" id="basic3">Frequency</span>
+                            <input type="text" id="monthly-rate" class="form-control" placeholder="" aria-describedby="basic-addon1">
+
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+   <br>
+
+ <button id="search">Submit</button>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
+  <script src="assets/javascript/app.js"></script>
+
+</body>
+</html>
