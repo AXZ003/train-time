@@ -1,0 +1,85 @@
+#title {
+
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: white;
+    align-items: center;
+    
+
+  
+}
+
+
+.jumbotron {
+
+    background-color: steelblue;
+    height: 190px;
+    margin: 0px;
+    opacity: .8;
+
+}
+
+.jumbotron h1 {
+
+font-size: 100px;
+
+}
+#container-full {
+
+    font-family: 'Anton', sans-serif;
+    margin-top: 50px;
+
+
+}
+
+.panel-title {
+        color: white;
+        /* font-weight: bolder; */
+
+
+}
+
+.panel-default>.panel-heading{
+
+
+    background-color: steelblue;
+
+}
+
+.input-group {
+
+    width:60%;
+    margin: auto;
+}
+
+.input-group-addon {
+
+     text-align: left;
+     margin: auto;
+     /* font-weight: bolder; */
+     color: white;
+     background-color: slategray;
+ }
+
+ body {
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+ 
+ }
+
+ button {
+    margin-top: 30px;
+    background-color: steelblue;
+    color: white;
+    size: 40px;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 10px;
+    /* margin:auto ; */
+}
+
+#search {
+margin-left: 45%;
+}

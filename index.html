@@ -9,20 +9,20 @@
     <title>Train Time</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
 </head>
-<body>
+<body background="assets/images/images3.jpg">
         
          <!-- HEADER  -->
     <div class="jumbotron">
         <div class="container">
-            <div class="row">
+            <div class="row1">
                 <div class="col-m-6">                   
                     <div id="title">
-                        <h1>Anytime is Train Time</h1>
-                        <h2>Choo Choo</h2>
+                        <h1>It's Train Time</h1>
+    
                     </div>
                 </div>  
             </div>
@@ -31,7 +31,7 @@
 
 
        <!-- search parameters -->
-      
+    <div id="container-full">
         <div class="input-group">
             <div class="container">
                 <div class="row">
@@ -55,7 +55,7 @@
                                             <!-- <th scope="col">Total Billed ($)</th> -->
                                           </tr>
                                         </thead>
-                                        
+
                                         <tbody class="comment-display"></tbody>
                                         
                                     </table>
@@ -85,22 +85,24 @@
                         <span class="input-group-addon" id="basic1">Destination</span>
                             <input type="text" id="destination" class="form-control" placeholder="" aria-describedby="basic-addon1">
 
-                        <span class="input-group-addon" id="basic2">First Train Time (HH:mm - military time)</span>
-                            <input type="text" id="train-time" class="form-control" placeholder="" aria-describedby="basic-addon1">
-   
                         <span class="input-group-addon" id="basic3">Frequency (min)</span>
                             <input type="text" id="frequency" class="form-control" placeholder="" aria-describedby="basic-addon1">
-
+                            
+                        <span class="input-group-addon" id="basic2">First Train Time (HH:mm - military time)</span>
+                            <input type="text" id="first-train-time" class="form-control" placeholder="" aria-describedby="basic-addon1">
+   
+                        <button id="search">Submit</button>
                     </div>
             </div>
         </div>
         </div>
     </div>
 </div>
+</div>  
 
    <br>
 
- <button id="search">Submit</button>
+
   
   
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
